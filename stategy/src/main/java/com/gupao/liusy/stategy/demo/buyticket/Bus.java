@@ -1,0 +1,16 @@
+package com.gupao.liusy.stategy.demo.buyticket;
+
+import com.gupao.liusy.stategy.MsgResult;
+
+/**
+ * 说明：
+ *
+ * @author liusy
+ * @date 2019/3/22 11:01
+ */
+public class Bus implements Transportation {
+    @Override
+    public MsgResult goHome(String uid) {
+        return new MsgResult(200, "购票成功，11号座位", "订单号BUS00001");
+    }
+}
